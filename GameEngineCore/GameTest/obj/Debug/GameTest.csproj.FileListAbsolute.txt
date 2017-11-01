@@ -1,0 +1,7 @@
+C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameTest\bin\Debug\GameTest.dll
+C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameTest\bin\Debug\GameTest.pdb
+C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameTest\bin\Debug\GameEngineCore.dll
+C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameTest\bin\Debug\GameEngineCore.pdb
+C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameTest\obj\Debug\GameTest.csprojResolveAssemblyReference.cache
+C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameTest\obj\Debug\GameTest.dll
+C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameTest\obj\Debug\GameTest.pdb

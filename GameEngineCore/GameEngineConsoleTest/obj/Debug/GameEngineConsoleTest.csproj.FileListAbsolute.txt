@@ -1,0 +1,10 @@
+C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameEngineConsoleTest\bin\Debug\GameEngineConsoleTest.exe.config
+C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameEngineConsoleTest\bin\Debug\GameEngineConsoleTest.exe
+C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameEngineConsoleTest\bin\Debug\GameEngineConsoleTest.pdb
+C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameEngineConsoleTest\obj\Debug\GameEngineConsoleTest.exe
+C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameEngineConsoleTest\obj\Debug\GameEngineConsoleTest.pdb
+C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameEngineConsoleTest\bin\Debug\GameEngineCore.dll
+C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameEngineConsoleTest\bin\Debug\GameEngineCore.pdb
+C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameEngineConsoleTest\obj\Debug\GameEngineConsoleTest.csprojResolveAssemblyReference.cache
+C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameEngineConsoleTest\bin\Debug\GameTest.dll
+C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameEngineConsoleTest\bin\Debug\GameTest.pdb
