@@ -3,3 +3,10 @@ C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameEngineCo
 C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameEngineCore\obj\Debug\GameEngineCore.csprojResolveAssemblyReference.cache
 C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameEngineCore\obj\Debug\GameEngineCore.dll
 C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameEngineCore\obj\Debug\GameEngineCore.pdb
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineCore\bin\Debug\GameEngineCore.dll
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineCore\bin\Debug\GameEngineCore.pdb
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineCore\bin\Debug\SolutionAssembliesLoader.dll
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineCore\bin\Debug\SolutionAssembliesLoader.pdb
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineCore\obj\Debug\GameEngineCore.csprojResolveAssemblyReference.cache
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineCore\obj\Debug\GameEngineCore.dll
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineCore\obj\Debug\GameEngineCore.pdb

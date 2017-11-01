@@ -28,7 +28,7 @@ namespace GameEngineCore
             bool passed = (GetFullMiliseconds(_currentTime.Ticks) - GetFullMiliseconds(_startTime.Ticks)) > _tickRate;
 
             resetStartTime(passed);
-            setTick();
+            
             return passed;
         }
 
@@ -42,6 +42,7 @@ namespace GameEngineCore
             if (passedTime)
             {
                 _startTime = DateTime.Now;
+                setTick();
             }
         }
 
@@ -52,6 +53,7 @@ namespace GameEngineCore
             {
                 CurrentTick = 0;
             }
+            Console.WriteLine(CurrentTick);
         }
     }
 }

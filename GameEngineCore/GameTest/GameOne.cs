@@ -11,12 +11,12 @@ namespace GameTest
     {
         public override void Draw()
         {
-            Console.WriteLine("Draw");
+            //Console.WriteLine("Draw");
         }
 
         public override void Update()
         {
-            Console.WriteLine("Update");
+            //Console.WriteLine("Update");
         }
     }
 }

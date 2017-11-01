@@ -1,0 +1,5 @@
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\SolutionAssembliesLoader\bin\Debug\SolutionAssembliesLoader.dll
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\SolutionAssembliesLoader\bin\Debug\SolutionAssembliesLoader.pdb
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\SolutionAssembliesLoader\obj\Debug\SolutionAssembliesLoader.csprojResolveAssemblyReference.cache
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\SolutionAssembliesLoader\obj\Debug\SolutionAssembliesLoader.dll
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\SolutionAssembliesLoader\obj\Debug\SolutionAssembliesLoader.pdb
