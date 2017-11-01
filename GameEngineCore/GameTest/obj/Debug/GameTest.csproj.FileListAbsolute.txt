@@ -7,10 +7,10 @@ C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameTest\obj
 C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameTest\obj\Debug\GameTest.pdb
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameTest\bin\Debug\GameTest.dll
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameTest\bin\Debug\GameTest.pdb
-D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameTest\bin\Debug\GameEngineCore.dll
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameTest\bin\Debug\SolutionAssembliesLoader.dll
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameTest\bin\Debug\GameEngineCore.pdb
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameTest\bin\Debug\SolutionAssembliesLoader.pdb
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameTest\obj\Debug\GameTest.csprojResolveAssemblyReference.cache
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameTest\obj\Debug\GameTest.dll
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameTest\obj\Debug\GameTest.pdb
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameTest\bin\Debug\GameEngineCore.exe

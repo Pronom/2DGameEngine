@@ -11,7 +11,6 @@ C:\Users\Ayoub\documents\visual studio 2017\Projects\GameEngineCore\GameEngineCo
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineConsoleTest\bin\Debug\GameEngineConsoleTest.exe.config
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineConsoleTest\bin\Debug\GameEngineConsoleTest.exe
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineConsoleTest\bin\Debug\GameEngineConsoleTest.pdb
-D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineConsoleTest\bin\Debug\GameEngineCore.dll
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineConsoleTest\bin\Debug\GameTest.dll
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineConsoleTest\bin\Debug\SolutionAssembliesLoader.dll
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineConsoleTest\bin\Debug\GameEngineCore.pdb
@@ -20,3 +19,4 @@ D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineConsol
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineConsoleTest\obj\Debug\GameEngineConsoleTest.csprojResolveAssemblyReference.cache
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineConsoleTest\obj\Debug\GameEngineConsoleTest.exe
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineConsoleTest\obj\Debug\GameEngineConsoleTest.pdb
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineConsoleTest\bin\Debug\GameEngineCore.exe

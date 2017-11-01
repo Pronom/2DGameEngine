@@ -15,19 +15,7 @@ namespace GameEngineConsoleTest
         static void Main(string[] args)
         {
 
-            //Console.WriteLine(date.Ticks);
-            //Console.WriteLine(GetFullMiliseconds(date.Ticks));
-            //Console.WriteLine(date.Millisecond);
-            //int breaker = 0;
-            //while (breaker != 60)
-            //{
-            //  if (!SecondPassed())
-            //    {
-            //        breaker++;
-            //        date = DateTime.Now;
-            //        Console.WriteLine(breaker);
-            //    }
-            //}
+            
 
             GameInitializer gameInit = new GameInitializer(typeof(AbstractGame));
 
@@ -38,14 +26,7 @@ namespace GameEngineConsoleTest
             Console.ReadKey();
         }
 
-        static long GetFullMiliseconds(long time)
-        {
-            return time / 10000;
-        }
 
-        static bool SecondPassed()
-        {
-            return GetFullMiliseconds(DateTime.Now.Ticks) - GetFullMiliseconds(date.Ticks) < 1000;
-        }
+
     }
 }
