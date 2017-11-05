@@ -30,7 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject />
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationBuildTasks" />
@@ -39,6 +40,8 @@
     <Reference Include="System" />
     <Reference Include="System.Activities.Core.Presentation" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,7 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractGame.cs" />
-    <Compile Include="AppStart\MainWindow.cs" />
+    <Compile Include="AppStart\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GameInit\GameInitializer.cs" />
     <Compile Include="Games.cs" />
     <Compile Include="GameLoop.cs" />
@@ -65,6 +70,12 @@
       <Project>{02afcbb6-18c1-458d-b4a7-ca6dce80393a}</Project>
       <Name>SolutionAssembliesLoader</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="AppStart\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

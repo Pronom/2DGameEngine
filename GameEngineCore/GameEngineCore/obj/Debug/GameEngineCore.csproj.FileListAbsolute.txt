@@ -10,3 +10,8 @@ D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineCore\o
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineCore\obj\Debug\GameEngineCore.pdb
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineCore\bin\Debug\GameEngineCore.exe
 D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineCore\obj\Debug\GameEngineCore.exe
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineCore\obj\Debug\AppStart\MainWindow.g.cs
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineCore\obj\Debug\GameEngineCore_MarkupCompile.cache
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineCore\obj\Debug\GameEngineCore_MarkupCompile.lref
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineCore\obj\Debug\AppStart\MainWindow.baml
+D:\Documents de l'autre\Mes Projets\2DGameEngine\GameEngineCore\GameEngineCore\obj\Debug\GameEngineCore.g.resources

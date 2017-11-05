@@ -12,12 +12,19 @@ namespace GameEngineCore
         public delegate void BreakGameLoop();
         public static BreakGameLoop OnBreakGameLoop;
 
-        public abstract void Draw();
+        public abstract void Init();
 
         public abstract void Update();
 
+        public abstract void Draw();
+
+        public abstract void Finish();
+
+
+
         public AbstractGame()
         {
+            Init();
             Games.GameList.Add(this);
         }
     }

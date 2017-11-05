@@ -11,21 +11,41 @@ namespace GameEngineCore
 {
     class Program
     {
+        [System.STAThreadAttribute()]
         static void Main(string[] args)
         {
-            
-            Thread t = new Thread(new ThreadStart(initWindow));
-            t.SetApartmentState(ApartmentState.STA);
+            App app = new App();
+            app.InitializeComponent();
+            app.Run();
 
-            t.Start();
-            
-            
+
+
 
         }
 
-        static void initWindow()
+
+        public class App : Application
         {
-            new MainWindow();
+            MainWindow main;
+            static Thread t;
+
+            public void InitializeComponent()
+            {
+
+
+                this.StartupUri = new System.Uri("/AppStart/MainWindow.xaml", System.UriKind.Relative);
+
+                //LoadComponent(new MainWindow(), );
+            }
+
+            private void initWindow()
+            {
+                //main = new MainWindow();
+                this.StartupUri = new System.Uri("MainWindow.xaml", System.UriKind.Relative);
+            }
+
+
+
         }
     }
 }

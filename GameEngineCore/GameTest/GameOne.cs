@@ -14,6 +14,16 @@ namespace GameTest
             //Console.WriteLine("Draw");
         }
 
+        public override void Finish()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Init()
+        {
+            throw new NotImplementedException();
+        }
+
         public override void Update()
         {
             //Console.WriteLine("Update");
