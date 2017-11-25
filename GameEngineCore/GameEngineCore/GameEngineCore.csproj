@@ -55,14 +55,17 @@
     <Compile Include="AppStart\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Extentions\RectangleExtension.cs" />
     <Compile Include="GameInit\GameInitializer.cs" />
     <Compile Include="Games.cs" />
     <Compile Include="GameLoop.cs" />
+    <Compile Include="GameTest\GameOne.cs" />
     <Compile Include="Interfaces\IGame.cs" />
     <Compile Include="Interfaces\IGameLoop.cs" />
     <Compile Include="Interfaces\ITick.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shapes\RectangleExtension.cs" />
     <Compile Include="TickRate.cs" />
   </ItemGroup>
   <ItemGroup>

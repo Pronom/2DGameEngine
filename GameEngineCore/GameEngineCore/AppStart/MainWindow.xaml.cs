@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameEngineCore.GameTest;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,22 @@ namespace GameEngineCore.AppStart
     /// </summary>
     public partial class MainWindow : Window
     {
+        GameOne g1;
         public MainWindow()
         {
             InitializeComponent();
+            g1 = new GameOne();
+            
+            initShapes();
+            Task.Factory.StartNew(()=> { GameLoop gLoop = new GameLoop(Games.GameList, 60); });
+        }
+
+        public void initShapes()
+        {
+            foreach (var item in g1.ShapeList)
+            {
+                canvasTest.Children.Add(item);
+            }
         }
     }
 }

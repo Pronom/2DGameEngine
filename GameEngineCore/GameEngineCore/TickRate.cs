@@ -17,7 +17,7 @@ namespace GameEngineCore
 
         public Tick(int framePerSeconds)
         {
-            _framePerSecond = framePerSeconds;
+            _framePerSecond = framePerSeconds > 300 ? 300 : framePerSeconds;
             _tickRate = 1000 / _framePerSecond;
             _startTime = DateTime.Now;
         }
@@ -53,7 +53,7 @@ namespace GameEngineCore
             {
                 CurrentTick = 0;
             }
-            Console.WriteLine(CurrentTick);
+            
         }
     }
 }

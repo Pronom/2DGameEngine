@@ -29,6 +29,7 @@ namespace GameEngineCore
             public void InitializeComponent()
             {
                 this.StartupUri = new System.Uri("/AppStart/MainWindow.xaml", System.UriKind.Relative);
+                
             }
 
 

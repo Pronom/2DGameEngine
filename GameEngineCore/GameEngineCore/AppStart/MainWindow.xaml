@@ -8,5 +8,9 @@
         Title="MainWindow" Height="350" Width="525">
 
     <Grid >
+        <Button Width="50" Height="20" HorizontalAlignment="Left">Start Game</Button>
+        <Canvas Name="canvasTest">
+            <Rectangle Width="100" Height="100" Fill="Red" Canvas.Left="162" Canvas.Top="117"></Rectangle>
+        </Canvas>
     </Grid>
 </Window>

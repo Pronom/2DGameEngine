@@ -1,9 +1,12 @@
 ﻿using GameEngineCore.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Threading;
+using static GameEngineCore.Program;
 
 namespace GameEngineCore
 {
@@ -29,6 +32,7 @@ namespace GameEngineCore
         #region Methods
         public void _GameLoop(List<AbstractGame> gameList)
         {
+            Debug.WriteLine(Dispatcher.CurrentDispatcher);
             while (true)
             {
                 if (_tick.FramePassed())
@@ -36,7 +40,7 @@ namespace GameEngineCore
                     foreach (AbstractGame games in GameList)
                     {
                         games.Update();
-                        games.Draw();
+                       App.Current.Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(()=>games.Draw()));
                     } 
                 }
             }

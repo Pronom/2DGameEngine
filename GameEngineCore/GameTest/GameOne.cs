@@ -11,7 +11,7 @@ namespace GameTest
     {
         public override void Draw()
         {
-            //Console.WriteLine("Draw");
+            
         }
 
         public override void Finish()
