@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
 
@@ -17,8 +19,8 @@ namespace GameEngineCore.GameTest
 
         public override void Draw()
         {
-
-            rect1.Margin = new System.Windows.Thickness(X, Y, 0, 0);
+            Point point = Mouse.GetPosition(window);
+            rect1.Margin = new System.Windows.Thickness(point.X - rect1.Width/2, point.Y - rect1.Height/2, 0, 0);
         }
 
         public override void Finish()

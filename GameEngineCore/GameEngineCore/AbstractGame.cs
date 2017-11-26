@@ -10,6 +10,7 @@ using System.Windows;
 using System.Windows.Shapes;
 using System.Reflection;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace GameEngineCore
 {
@@ -18,7 +19,7 @@ namespace GameEngineCore
         public delegate void BreakGameLoop();
         
         public static BreakGameLoop OnBreakGameLoop;
-        protected Window DrawableWindow = App.Current.MainWindow;
+        
         public List<Shape> ShapeList = new List<Shape>();
         public abstract void Init();
 
@@ -81,7 +82,7 @@ namespace GameEngineCore
         {
             foreach (var item in ShapeList)
             {
-                CanvasInjector.windowCanvas.Children.Add(item);
+                Injector.windowCanvas.Children.Add(item);
             }
         }
 

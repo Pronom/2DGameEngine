@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Shapes;
 
@@ -13,30 +14,32 @@ namespace GameEngineCore.GameTest
     {
 
         protected Canvas windowCanvas;
-        
+        protected IInputElement window;
+        private GameOne g1;
         public Game()
         {
-            windowCanvas = CanvasInjector.windowCanvas;
+            windowCanvas = Injector.windowCanvas;
+            window = Injector.window;
         }
 
         public override void Draw()
         {
-            throw new NotImplementedException();
+            g1.Draw();
         }
 
         public override void Finish()
         {
-            throw new NotImplementedException();
+            g1.Finish();
         }
 
         public override void Init()
         {
-            throw new NotImplementedException();
+            g1 = new GameOne();
         }
 
         public override void Update()
         {
-            throw new NotImplementedException();
+            g1.Update();
         }
     }
 }

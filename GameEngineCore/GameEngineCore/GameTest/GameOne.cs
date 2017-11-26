@@ -13,15 +13,17 @@ namespace GameEngineCore.GameTest
 {
     public class GameOne : Game
     {
+        GameTwo g2;
         public Rectangle rect1 { get; private set; }
-        public Ellipse circle { get; private set; }
+        public Ellipse circle { get; private set; } 
         private static int X;
         private static int Y;
 
         public override void Draw()
         {
-
+            
             rect1.Margin = new System.Windows.Thickness(X, Y, 0, 0);
+            g2.Draw();
         }
 
         public override void Finish()
@@ -45,11 +47,14 @@ namespace GameEngineCore.GameTest
             circle.Fill = Brushes.Azure;
            
             rect1.Margin = new System.Windows.Thickness(X, Y, 0, 0);
+
+            g2 = new GameTwo();
         }
 
         public override void Update()
         {
             X++;
+            g2.Update();
             //Y++;
         }
     }

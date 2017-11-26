@@ -9,8 +9,8 @@ namespace GameEngineCore.Interfaces
     public interface IGameLoop
     {
 
-        List<AbstractGame> GameList { get; set; }
+        AbstractGame Game { get; set; }
 
-        void _GameLoop(List<AbstractGame> gameList);
+        void _GameLoop(AbstractGame game);
     }
 }

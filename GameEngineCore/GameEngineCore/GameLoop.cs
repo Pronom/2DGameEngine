@@ -14,35 +14,33 @@ namespace GameEngineCore
     public class GameLoop : IGameLoop
     {
         #region Properties
-        public List<AbstractGame> GameList { get; set; }
+        public AbstractGame Game { get; set; }
         private ITick _tick;
         #endregion
 
         #region Constructors
-        public GameLoop(List<AbstractGame> gameList, int tickRate)
+        public GameLoop(AbstractGame game, int tickRate)
         {
-            GameList = gameList;
+            Game = game;
             _tick = new Tick(tickRate);
 
 
-            _GameLoop(GameList);
+            _GameLoop(Game);
 
         }
         #endregion
 
         #region Methods
-        public void _GameLoop(List<AbstractGame> gameList)
+        public void _GameLoop(AbstractGame game)
         {
             Debug.WriteLine(Dispatcher.CurrentDispatcher);
             while (true)
             {
                 if (_tick.FramePassed())
                 {
-                    foreach (AbstractGame games in GameList)
-                    {
-                        games.Update();
-                        Application.Current.Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(() => games.Draw()));
-                    }
+                    game.Update();
+                    Application.Current.Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(() => game.Draw()));
+                    
                 }
             }
         }
