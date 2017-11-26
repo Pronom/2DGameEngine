@@ -5,12 +5,13 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Threading;
 using static GameEngineCore.Program;
 
 namespace GameEngineCore
 {
-    public class GameLoop: IGameLoop
+    public class GameLoop : IGameLoop
     {
         #region Properties
         public List<AbstractGame> GameList { get; set; }
@@ -25,7 +26,7 @@ namespace GameEngineCore
 
 
             _GameLoop(GameList);
-            
+
         }
         #endregion
 
@@ -40,11 +41,11 @@ namespace GameEngineCore
                     foreach (AbstractGame games in GameList)
                     {
                         games.Update();
-                       App.Current.Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(()=>games.Draw()));
-                    } 
+                        Application.Current.Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(() => games.Draw()));
+                    }
                 }
             }
-        } 
+        }
         #endregion
     }
 }

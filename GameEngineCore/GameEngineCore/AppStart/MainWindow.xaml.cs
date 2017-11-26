@@ -25,18 +25,22 @@ namespace GameEngineCore.AppStart
         public MainWindow()
         {
             InitializeComponent();
-            g1 = new GameOne();
             
-            initShapes();
+            //initShapes();
+            //Canvas canvas = new Canvas();
+            //AddChild(canvas);
+            CanvasInjector injector = new CanvasInjector(canvasTest);
+            g1 = new GameOne();
+            Game g2 = new GameTwo();
             Task.Factory.StartNew(()=> { GameLoop gLoop = new GameLoop(Games.GameList, 60); });
         }
 
-        public void initShapes()
-        {
-            foreach (var item in g1.ShapeList)
-            {
-                canvasTest.Children.Add(item);
-            }
-        }
+        //public void initShapes()
+        //{
+        //    foreach (var item in g1.ShapeList)
+        //    {
+        //        canvasTest.Children.Add(item);
+        //    }
+        //}
     }
 }

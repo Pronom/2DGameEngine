@@ -1,17 +1,14 @@
-﻿using GameEngineCore.AppStart;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using static GameEngineCore.Program;
 
 namespace GameEngineCore.GameTest
 {
-    public class GameOne : Game
+    public class GameTwo : Game
     {
         public Rectangle rect1 { get; private set; }
         public Ellipse circle { get; private set; }
@@ -32,10 +29,10 @@ namespace GameEngineCore.GameTest
         public override void Init()
         {
             rect1 = new Rectangle();
-            
+
             rect1.Width = 100;
             rect1.Height = 100;
-            rect1.Fill = Brushes.Black;
+            rect1.Fill = Brushes.Red;
             Y = 0;
             X = 0;
 
@@ -43,14 +40,14 @@ namespace GameEngineCore.GameTest
             circle.Width = 100;
             circle.Height = 100;
             circle.Fill = Brushes.Azure;
-           
+
             rect1.Margin = new System.Windows.Thickness(X, Y, 0, 0);
         }
 
         public override void Update()
         {
-            X++;
-            //Y++;
+            //X++;
+            Y++;
         }
     }
 }

@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractGame.cs" />
+    <Compile Include="AppStart\CanvasInjector.cs" />
     <Compile Include="AppStart\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
@@ -59,7 +60,9 @@
     <Compile Include="GameInit\GameInitializer.cs" />
     <Compile Include="Games.cs" />
     <Compile Include="GameLoop.cs" />
+    <Compile Include="GameTest\Game.cs" />
     <Compile Include="GameTest\GameOne.cs" />
+    <Compile Include="GameTest\GameTwo.cs" />
     <Compile Include="Interfaces\IGame.cs" />
     <Compile Include="Interfaces\IGameLoop.cs" />
     <Compile Include="Interfaces\ITick.cs" />

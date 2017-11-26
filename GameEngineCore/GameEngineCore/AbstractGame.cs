@@ -9,12 +9,14 @@ using static GameEngineCore.Program;
 using System.Windows;
 using System.Windows.Shapes;
 using System.Reflection;
+using System.Windows.Controls;
 
 namespace GameEngineCore
 {
     public abstract class AbstractGame 
     {
         public delegate void BreakGameLoop();
+        
         public static BreakGameLoop OnBreakGameLoop;
         protected Window DrawableWindow = App.Current.MainWindow;
         public List<Shape> ShapeList = new List<Shape>();
@@ -32,10 +34,11 @@ namespace GameEngineCore
         {
             Init();
             FillShapeList();
+            initShapes();
             Games.GameList.Add(this);
         }
 
-        private void FillShapeList()
+        protected void FillShapeList()
         {
             foreach (PropertyInfo item in this.GetType().GetProperties())
             {
@@ -54,7 +57,7 @@ namespace GameEngineCore
             }
         }
 
-        private bool isShapeType(Type type)
+        protected bool isShapeType(Type type)
         {
             if (type == typeof(Shape))
             {
@@ -74,6 +77,14 @@ namespace GameEngineCore
             return false;
         }
 
-        
+        protected void initShapes()
+        {
+            foreach (var item in ShapeList)
+            {
+                CanvasInjector.windowCanvas.Children.Add(item);
+            }
+        }
+
+
     }
 }
