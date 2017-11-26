@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameEngineCore
+namespace GameEngineCore.GameLoopCore
 {
     public class Tick : ITick
     {
@@ -28,7 +28,7 @@ namespace GameEngineCore
             bool passed = (GetFullMiliseconds(_currentTime.Ticks) - GetFullMiliseconds(_startTime.Ticks)) > _tickRate;
 
             resetStartTime(passed);
-            
+
             return passed;
         }
 
@@ -48,12 +48,12 @@ namespace GameEngineCore
 
         private void setTick()
         {
-            CurrentTick++; 
+            CurrentTick++;
             if (CurrentTick >= _framePerSecond)
             {
                 CurrentTick = 0;
             }
-            
+
         }
     }
 }

@@ -1,15 +1,14 @@
-﻿using GameEngineCore.Interfaces;
+﻿using GameEngineCore.GameBase;
+using GameEngineCore.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
-using static GameEngineCore.Program;
 
-namespace GameEngineCore
+namespace GameEngineCore.GameLoopCore
 {
     public class GameLoop : IGameLoop
     {
@@ -33,14 +32,13 @@ namespace GameEngineCore
         #region Methods
         public void _GameLoop(AbstractGame game)
         {
-            Debug.WriteLine(Dispatcher.CurrentDispatcher);
             while (true)
             {
                 if (_tick.FramePassed())
                 {
                     game.Update();
                     Application.Current.Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(() => game.Draw()));
-                    
+
                 }
             }
         }

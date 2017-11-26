@@ -53,10 +53,6 @@
       <Project>{e758c384-8b54-4434-beec-c3b1b58e3f6e}</Project>
       <Name>GameEngineCore</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GameTest\GameTest.csproj">
-      <Project>{37bccf08-c7d3-49db-8e73-c832e81f0521}</Project>
-      <Name>GameTest</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,14 +1,11 @@
-﻿using GameEngineCore.AppStart;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+
+using GameEngineCore.AppStart;
+using GameEngineCore.GameTest;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Shapes;
 
-namespace GameEngineCore.GameTest
+namespace GameEngineCore.GameBase
 {
     public class Game : AbstractGame
     {

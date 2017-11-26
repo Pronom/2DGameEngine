@@ -1,25 +1,16 @@
-﻿using GameEngineCore.Interfaces;
+﻿
+using GameEngineCore.AppStart;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GameEngineCore.AppStart;
-using static GameEngineCore.Program;
-using System.Windows;
-using System.Windows.Shapes;
 using System.Reflection;
-using System.Windows.Controls;
-using System.Windows.Input;
+using System.Windows.Shapes;
 
-namespace GameEngineCore
+namespace GameEngineCore.GameBase
 {
-    public abstract class AbstractGame 
+    public abstract class AbstractGame
     {
-        public delegate void BreakGameLoop();
         
-        public static BreakGameLoop OnBreakGameLoop;
-        
+
         public List<Shape> ShapeList = new List<Shape>();
         public abstract void Init();
 
@@ -29,23 +20,22 @@ namespace GameEngineCore
 
         public abstract void Finish();
 
-        
+
 
         public AbstractGame()
         {
             Init();
             FillShapeList();
-            initShapes();
-            Games.GameList.Add(this);
+            InitShapes();
         }
 
         protected void FillShapeList()
         {
             foreach (PropertyInfo item in this.GetType().GetProperties())
             {
-                
-                    Shape addShape = (Shape)item.GetValue(this);
-                
+
+                Shape addShape = (Shape)item.GetValue(this);
+
                 //if (isShapeType(item.GetType()))
                 //{
                 //    Type t = item.GetType();
@@ -53,7 +43,7 @@ namespace GameEngineCore
                 //    ShapeList.Add(addShape);
                 //}
 
-                
+
                 ShapeList.Add(addShape);
             }
         }
@@ -78,7 +68,7 @@ namespace GameEngineCore
             return false;
         }
 
-        protected void initShapes()
+        protected void InitShapes()
         {
             foreach (var item in ShapeList)
             {
